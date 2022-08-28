@@ -1,0 +1,156 @@
+:root
+{
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+body
+{   
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+.all
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all .background
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.all .card
+{
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.all .card img
+{
+    width: 100%;
+}
+.all .card h2
+{
+    color: var(--Dark-blue);
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px; 
+}
+.all .card p
+{
+    color: var(--Desaturated-blue);
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 25px; 
+    text-align: center;
+    line-height: 28px;
+}
+.all .card .sub
+{
+    width: 80%;
+    height:12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+}
+.all .card .sub img
+{
+    width: 60px;
+}
+.all .card .sub .text
+{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.all .card .sub .text .head
+{
+    width: 100%;
+    margin: 0;
+    margin-left:15px;
+    padding: 0px;
+    font-weight: bold;
+    color: var(--Dark-blue);
+}
+.all .card .sub .text .foot
+{
+    width: 100%;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    font-weight: 200;
+}
+.all .card .sub .change
+{
+    width: 220px;
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.all .card .sub .change:hover
+{
+    color: rgb(119, 107, 185);
+    text-decoration: none;
+    cursor: pointer;
+}
+.all .card .botton
+{
+    width: 80%;
+    height: 8%;
+    background-color: var(--Bright-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 5px 10px 30px 0px hsl(245, 75%, 52% , 50%);
+}
+.all .card .botton:hover
+{
+    background-color: rgb(119, 107, 185);
+    text-decoration: none;
+    cursor: pointer;
+}
+.all .card .cancle
+{
+    margin: 30px;
+    font-weight: bold;
+    color:var(--Desaturated-blue);
+}
+.all .card .cancle:hover
+{
+    color: black;
+    cursor: pointer;
+}
